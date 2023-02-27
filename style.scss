@@ -1,0 +1,209 @@
+$border: 1px solid rgba(0, 0, 0, 0.1);
+$font-color1: #1C1C1C;
+$font-color2: rgba(0, 0, 0, 0.4);
+$font-color3:  rgba(0, 0, 0, 0.2);
+
+@mixin typo($weight, $size, $line-height){
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $line-height;
+}
+
+@mixin gap($gap){
+    display: flex;
+    gap: $gap;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color:  #FFFFFF;
+    display: flex;
+}
+
+nav{
+    border-right: $border;
+    max-width: 212px;
+}
+
+.user, .nav-block, header, #search{
+    @include typo(400, 14px, 20px);
+}
+
+.nav-block{
+    padding: 28px 28px 0px 28px;
+}
+
+.user{
+    @include gap(8px);
+    align-items: center;
+    margin: 20px 20px 0 20px;
+}
+
+.black-40{
+    color: $font-color2;
+}
+
+.black-20{
+    color: $font-color3
+}
+
+.fav-rec-1{
+    @include gap(20px);
+}
+
+.fav-rec-2{
+   margin-top: 8px;
+   @include gap(12px);
+}
+
+.dash{
+    margin-top:32px;
+    
+    ul{
+        li{
+            @include gap(4px);
+            align-items: center;
+            margin-top: 12px;
+        }
+    }
+}
+
+.list-aside{
+    padding-left: 40px;
+}
+
+.arrowaside{
+    margin-right: 4px;
+}
+
+.user-profile{
+    display: flex;
+    text-align: center;
+}
+
+main{
+    width: 100%;
+}
+
+header{
+    @include typo(400, 14px, 20px);
+    padding: 12px 32px;
+    border-bottom: $border;
+    
+    ul{
+        display: flex;
+        justify-content: space-between;
+        div{
+            display: flex;
+            align-items: center;
+        }
+
+    }
+}
+
+.ml-16{
+    margin-left: 16px;
+}
+
+.ml-24{
+    margin-left: 24px;
+}
+
+.mr-16{
+    margin-right: 16px;
+}
+
+.mr-20{
+    margin-right: 20px;
+}
+
+.mr-12{
+    margin-right: 12px;
+}
+
+.black-color{
+    color: $font-color1;
+}
+
+#search{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    padding: 4px 0;
+}
+
+#switch{
+    background: none;
+    border: none;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    border-left: $border;
+    padding: 26px 24px 0;
+    max-width: 280px;
+    width: 100%;
+}
+
+.typo1{
+    @include typo(400, 14px, 20px)
+}
+
+.typo2{
+    @include typo(600, 14px, 20px)
+}
+
+.typo3{
+    @include typo(400, 12px, 18px)
+}
+
+.subtitle{
+    margin-bottom: 20px;
+    display: block;
+}
+
+.subtitle2{
+    margin: 32px 0 20px 0;
+    display: block;
+}
+
+.in-box{
+    @include gap(8px);
+}
+.block-box{
+    @include gap(16px);
+    flex-direction: column;
+}
+
+.div-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-img{
+    margin-bottom: auto;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 28px;
+    padding-right: 36px;
+    @include typo(400, 12px, 18px);
+    
+    ul{
+        @include gap(20px)
+    }
+}
+
+
