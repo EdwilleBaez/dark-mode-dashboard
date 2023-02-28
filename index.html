@@ -75,8 +75,11 @@
                     <li><a  class="black-color" href="#">Default</a></li>
                 </div>
                 <div>
-                    <label for="search"></label>
-                    <input class="black-20" type="search" placeholder="Search" id="search" name="">
+                    <div class="input-wrapper">
+                        <img class="input-lupa" src="./assets/lupa.svg" alt="">
+                        <input class="black-20" type="text" placeholder="Search" id="search" name="">
+                        <img class="input-icon" src="./assets/⌘C.svg" alt="">
+                    </div>
                     <li class="ml-24">   
                         <button class="switchDark active" id="switch">
                             <span><img class="" src="./assets/ligth-button.svg" alt=""></span>
@@ -88,54 +91,68 @@
                 </div>
             </ul>
         </header>
-        <div id="content-dashboard">
-            <span>Today</span><img class="" src="./assets/ArrowLineDown2.svg" alt="">
-            <div>
-                <div>
-                    <span>Views</span>
-                    <span>721k</span>
-                    <span>+11.01%<img class="" src="./assets/ArrowRise.svg" alt=""></span>
+        <div class="content-dashboard">
+            <div class="boxes-container">
+                <div class="boxes-title">
+                    <span>Today</span><img class="" src="./assets/ArrowLineDown2.svg" alt="">
+                </div>
+                <div class="boxes1">
+                    <div class="box1 bc1">
+                        <span class="box1-title">Views</span>
+                        <div class="box1-in">
+                            <span class="box1-sub">721k</span>
+                            <span class="percent">+11.01%<img class="" src="./assets/ArrowRise.svg" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="box1 bc2">
+                        <span class="box1-title">Visits</span>
+                        <div class="box1-in">
+                            <span class="box1-sub">367k</span>
+                            <span class="percent">+9.15%<img class="" src="./assets/ArrowRise.svg" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="box1 bc1">
+                        <span class="box1-title">New Users</span>
+                        <div class="box1-in">
+                            <span class="box1-sub">1,156</span>
+                            <span class="percent">-0.56%<img class="" src="./assets/Vector 647 (Stroke).svg" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="box1 bc2">
+                        <span class="box1-title">Active Users</span>
+                        <div class="box1-in">
+                            <span class="box1-sub">239k</span>
+                            <span class="percent">-1.48%<img class="" src="./assets/Vector 647 (Stroke).svg" alt=""></span>
+                        </div>
+                    </div>
                 </div>
                 <div>
-                    <span>Visits</span>
-                    <span>367k</span>
-                    <span>+9.15%<img class="" src="./assets/ArrowRise.svg" alt=""></span>
+                    <div>
+                        <span>Total Users</span>
+                        <span>Total Projects</span>
+                        <span>Operating Status</span>
+                        <span>/</span>
+                        <span><img src="./assets/EllipseBlack.svg" alt="">Current Week</span>
+                        <span><img src="./assets/EllipseGray.svg" alt="">Previous Week</span>
+                        <span><img src="./assets/DotsThreeOutlineVertical2.svg" alt=""></span>
+            
+                    </div>
+                    <div class="chart1">
+            
+                    </div>
+                    <div class="chart2">
+            
+                    </div>
+                    <div class="chart3">
+            
+                    </div>
+                    <div class="chart4">
+            
+                    </div>
+                    <div class="chart5">
+            
+                    </div>
                 </div>
-                <div>
-                    <span>New Users</span>
-                    <span>1,156</span>
-                    <span>-0.56%<img class="" src="./assets/Vector 647 (Stroke).svg" alt=""></span>
-                </div>
-                <div>
-                    <span>Active Users</span>
-                    <span>239k</span>
-                    <span>-1.48%<img class="" src="./assets/Vector 647 (Stroke).svg" alt=""></span>
-                </div>
-            </div>
-            <div>
-                <span>Total Users</span>
-                <span>Total Projects</span>
-                <span>Operating Status</span>
-                <span>/</span>
-                <span><img src="./assets/EllipseBlack.svg" alt="">Current Week</span>
-                <span><img src="./assets/EllipseGray.svg" alt="">Previous Week</span>
-                <span><img src="./assets/DotsThreeOutlineVertical2.svg" alt=""></span>
-    
-            </div>
-            <div id="chart">
-    
-            </div>
-            <div id="chart2">
-    
-            </div>
-            <div id="chart3">
-    
-            </div>
-            <div id="chart4">
-    
-            </div>
-            <div id="chart5">
-    
             </div>
         </div>
         <footer>
