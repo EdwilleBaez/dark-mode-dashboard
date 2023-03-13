@@ -5,11 +5,11 @@
     <title>SNOW</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body>
-    <nav>
+<body class="grid-layout">
+    <nav class="b1">
         <div class="user">    
             <img class="" src="./assets/andi-lane-img.svg" alt=""><span class="">Andi Lane</span>
         </div>
@@ -59,13 +59,13 @@
                     </div>
                 </div>
             </div>
-        <div class="logo">
-            <img class="" src="./assets/Logo.svg" alt="">
-        </div>
-    </div>     
+            <div class="logo">
+                <img class="" src="./assets/Logo.svg" alt="">
+            </div>
+        </div>     
     </nav>
-    <main>
-        <header>
+    <div class="contenido-centro">
+        <header class="b2">
             <ul>
                 <div>
                     <li class="mr-16"><img class="" src="./assets/sidebar.svg" alt=""></li>
@@ -91,71 +91,120 @@
                 </div>
             </ul>
         </header>
-        <div class="content-dashboard">
-            <div class="boxes-container">
-                <div class="boxes-title">
-                    <span>Today</span><img class="" src="./assets/ArrowLineDown2.svg" alt="">
-                </div>
-                <div class="boxes1">
-                    <div class="box1 bc1">
-                        <span class="box1-title">Views</span>
-                        <div class="box1-in">
-                            <span class="box1-sub">721k</span>
-                            <span class="percent">+11.01%<img class="" src="./assets/ArrowRise.svg" alt=""></span>
+        <main class="b3">
+            <div class="content-dashboard">
+                <div class="boxes-container">
+                    <div class="boxes-title">
+                        <span>Today</span><img class="" src="./assets/ArrowLineDown2.svg" alt="">
+                    </div>
+                    <div class="boxes1">
+                        <div class="box1 bc1">
+                            <span class="box1-title">Views</span>
+                            <div class="box1-in">
+                                <span class="box1-sub">721k</span>
+                                <span class="percent">+11.01%<img class="" src="./assets/ArrowRise.svg" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="box1 bc2">
+                            <span class="box1-title">Visits</span>
+                            <div class="box1-in">
+                                <span class="box1-sub">367k</span>
+                                <span class="percent">+9.15%<img class="" src="./assets/ArrowRise.svg" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="box1 bc1">
+                            <span class="box1-title">New Users</span>
+                            <div class="box1-in">
+                                <span class="box1-sub">1,156</span>
+                                <span class="percent">-0.56%<img class="" src="./assets/Vector 647 (Stroke).svg" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="box1 bc2">
+                            <span class="box1-title">Active Users</span>
+                            <div class="box1-in">
+                                <span class="box1-sub">239k</span>
+                                <span class="percent">-1.48%<img class="" src="./assets/Vector 647 (Stroke).svg" alt=""></span>
+                            </div>
                         </div>
                     </div>
-                    <div class="box1 bc2">
-                        <span class="box1-title">Visits</span>
-                        <div class="box1-in">
-                            <span class="box1-sub">367k</span>
-                            <span class="percent">+9.15%<img class="" src="./assets/ArrowRise.svg" alt=""></span>
-                        </div>
-                    </div>
-                    <div class="box1 bc1">
-                        <span class="box1-title">New Users</span>
-                        <div class="box1-in">
-                            <span class="box1-sub">1,156</span>
-                            <span class="percent">-0.56%<img class="" src="./assets/Vector 647 (Stroke).svg" alt=""></span>
-                        </div>
-                    </div>
-                    <div class="box1 bc2">
-                        <span class="box1-title">Active Users</span>
-                        <div class="box1-in">
-                            <span class="box1-sub">239k</span>
-                            <span class="percent">-1.48%<img class="" src="./assets/Vector 647 (Stroke).svg" alt=""></span>
-                        </div>
-                    </div>
-                </div>
-                <div>
                     <div>
-                        <span>Total Users</span>
-                        <span>Total Projects</span>
-                        <span>Operating Status</span>
-                        <span>/</span>
-                        <span><img src="./assets/EllipseBlack.svg" alt="">Current Week</span>
-                        <span><img src="./assets/EllipseGray.svg" alt="">Previous Week</span>
-                        <span><img src="./assets/DotsThreeOutlineVertical2.svg" alt=""></span>
-            
-                    </div>
-                    <div class="chart1">
-            
-                    </div>
-                    <div class="chart2">
-            
-                    </div>
-                    <div class="chart3">
-            
-                    </div>
-                    <div class="chart4">
-            
-                    </div>
-                    <div class="chart5">
-            
+                        <div class="div-charts">
+                            <div class="chart c1">
+                                <div class="chart1">
+                                    <span class="typo2">Total Users</span>
+                                    <span class="typo1 black-40">Total Projects</span>
+                                    <span class="typo1 black-40">Operating Status</span>
+                                    <span class="black-20">|</span>
+                                    <div class="div-week">
+                                        <div class="dw">
+                                            <img class="chart-img mr-5" src="./assets/EllipseBlack.svg" alt=""><span class="typo3">Current Week</span>
+                                        </div>
+                                        <div class="dw">
+                                            <img class="chart-img mr-5" src="./assets/blueA.svg" alt=""><span class="typo3">Previous Week</span>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/DotsThreeOutlineVertical2.svg" alt="">
+                                </div>
+                                <div>
+                                    <canvas id="graph1"></canvas>  
+                                </div>
+                            </div>
+                            <div class="chart c2">
+                                <span class="typo2">Traffic by Website</span>
+                                <div class="chart2">
+                                    <!--<ul>
+                                        <li class="typo3">Google</li>
+                                        <li class="typo3">Youtube</li>
+                                        <li class="typo3">Instagram</li>
+                                        <li class="typo3">Pinterest</li>
+                                        <li class="typo3"> Facebook</li>
+                                        <li class="typo3">Twitter</li>
+                                        <li class="typo3">Tumblr</li>
+                                    </ul>-->
+                                    <div>
+                                        <canvas id="graph2"></canvas>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart c3">
+                                <span class="typo2">Traffic by Device</span>
+                                <div>
+                                    <canvas id="graph3"></canvas>  
+                                </div>
+                            </div>
+                            <div class="chart c4">
+                                <div class="title-c4">
+                                    <span class="typo2">Traffic by Location</span>
+                                </div>
+                                <div class="div-graph4">
+                                    <div>
+                                        <canvas id="graph4"></canvas>  
+                                    </div>
+                                    <div class="chart-c4">
+                                        <div class="div-c4">
+                                            <span class="typo3"><img class="mr-5" src="./assets/greenB.svg" alt="">Unites States</span>
+                                            <span class="typo3"><img class="mr-5" src="./assets/purpleB.svg" alt="">Canada</span>
+                                            <span class="typo3"><img class="mr-5" src="./assets/EllipseBlack.svg" alt="">Mexico</span>
+                                            <span class="typo3"><img class="mr-5" src="./assets/purpleA.svg" alt="">Other</span>
+                                        </div>
+                                        <div class="div-c4">
+                                            <span class="typo3">38.6%</span>
+                                            <span class="typo3">22.5%</span>
+                                            <span class="typo3">30.8%</span>
+                                            <span class="typo3">8.1%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart c5">
+                                <span class="typo2">Marketing & SEO</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <footer>
+        </main>
+        <footer class="b5">
             <span class="black-40">© 2023 Snow</span>
             <ul>
                 <li><a class="black-40" href="">About</a></li>
@@ -163,8 +212,8 @@
                 <li><a class="black-40"href="">Contact Us</a></li>
             </ul>
         </footer>
-    </main>
-    <aside>
+    </div>
+    <aside class="b4">
         <span class="typo2 subtitle">Notification</span>
         <div class="block-box">
             <div class="in-box">
@@ -244,5 +293,12 @@
             <span class="typo1 in-box"><img class="" src="./assets/3D 03.svg" alt="">Koray Okumus</span>
         </div>
     </aside>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+    <script src="./charts.js"></script>
+    <script src="./charts3.js"></script>
+    <script src="./charts4.js"></script>
+
+
+
 </body>
 </html>

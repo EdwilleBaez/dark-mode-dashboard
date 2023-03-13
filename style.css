@@ -12,6 +12,25 @@ body {
   display: flex;
 }
 
+.grid-layout {
+  display: grid;
+  grid-template-areas: "nav main aside";
+  grid-template-columns: 212px auto 280px;
+  grid-template-rows: auto auto auto;
+}
+
+.b1 {
+  grid-area: nav;
+}
+
+.contenido-centro {
+  grid-area: main;
+}
+
+.b3 {
+  grid-area: aside;
+}
+
 nav {
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   max-width: 212px;
@@ -104,6 +123,10 @@ header ul div {
   margin-left: 24px;
 }
 
+.mr-5 {
+  margin-right: 5px;
+}
+
 .mr-16 {
   margin-right: 16px;
 }
@@ -166,7 +189,7 @@ header ul div {
 }
 
 .boxes-container {
-  max-width: 892px;
+  max-width: 800px;
   margin: auto;
 }
 
@@ -204,7 +227,7 @@ header ul div {
 
 .box1-in {
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
   margin-top: 8px;
   align-items: center;
 }
@@ -227,6 +250,98 @@ header ul div {
   line-height: 18px;
   display: flex;
   gap: 5px;
+}
+
+.div-charts {
+  display: grid;
+  grid-template-areas: "c1 c1 c1 c2" "c3 c3 c4 c4" "c5 c5 c5 c5";
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.chart {
+  background-color: #F7F9FB;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.c1 {
+  grid-area: c1;
+  margin: 28px 8px 28px 0;
+}
+
+.chart1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.div-week {
+  display: flex;
+  gap: 16px;
+}
+
+.dw {
+  display: flex;
+  align-items: center;
+}
+
+.chart-img {
+  width: 6px;
+  height: 6px;
+}
+
+.c2 {
+  grid-area: c2;
+  margin: 28px 0 28px 20px;
+}
+.c2 ul {
+  margin-top: 16px;
+}
+.c2 ul li {
+  margin-bottom: 18px;
+}
+
+.c3 {
+  grid-area: c3;
+  margin: 0 14px 28px 0;
+}
+
+.c4 {
+  grid-area: c4;
+  margin: 0 0 28px 14px;
+}
+
+.div-graph4 {
+  display: flex;
+}
+
+#graph4 {
+  width: 118px;
+  height: 118px;
+}
+
+.chart-c4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.div-c4 {
+  display: flex;
+  flex-direction: column;
+}
+.div-c4 span {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.title-c4 {
+  margin-bottom: 28px;
+}
+
+.c5 {
+  grid-area: c5;
 }
 
 aside {
